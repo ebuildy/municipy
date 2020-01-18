@@ -1,0 +1,11 @@
+{% extends "cms/layout_simple.html.twig" %}
+
+{% block content %}
+
+    {% set items = data_find("conseiller") %}
+
+    {% for item in items %}
+    <a href="{{ path("cms_conseiller_details", { slug : item.slug }) }}">{{ item.name }}</a>
+    {% endfor %}
+
+{% endblock %}

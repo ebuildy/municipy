@@ -1,0 +1,37 @@
+easy_admin:
+    site_name: 'Serra 2020'
+    formats:
+        date:     'd/m/Y'
+        time:     'H:i'
+        datetime: 'd/m/Y H:i:s'
+    entities:
+        Conseiller:
+          class: App\Entity\Conseiller
+          list:
+            fields: ["name", "job", "rank"]
+          form:
+            fields:
+              - name
+              - age
+              - job
+              - bio
+              - rank
+        Category:
+          class: App\Entity\ProgramCategory
+        PunchLine:
+          class: App\Entity\PunchLine
+        Page:
+          class: App\Entity\Page
+          list:
+            fields: ["name", "title", "path", "parent", "updatedAt"]
+          form:
+            fields:
+            - name
+            - { type: 'section', label: 'Contenu' }
+            - title
+            - description
+            - template
+            - { type: 'section', label: 'Navigation' }
+            - parent
+            - path
+            - generator

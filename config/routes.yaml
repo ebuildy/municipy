@@ -1,3 +1,7 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+cms_routes:
+    resource: 'App\Routing\CMSLoader::loadRoutes'
+    type: service
