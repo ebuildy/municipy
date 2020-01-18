@@ -75,4 +75,8 @@ class PunchLine
 
         return $this;
     }
+
+    public function __toString(): string {
+        return empty($this->text) ? '' : substr($this->text, 0, 32);
+    }
 }

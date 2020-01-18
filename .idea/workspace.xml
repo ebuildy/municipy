@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e8b291d-ee29-4064-b0b6-46052a187a0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Behavior/WithSlug.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventListener/DoctrineSlugifyEventListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Twig/AppExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/StringUtils.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cms/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cms/layout_simple.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cms/pages/conseiller/details.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cms/pages/conseiller/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Behavior/WithTimestamp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/website.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/ProgramCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ProgramCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/PunchLine.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/PunchLine.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,6 +142,8 @@
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1WZiJZvFVQwlnYgWu9NBcyYKT1N" />
@@ -179,10 +179,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="613" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1579368759685">
+    <state x="613" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1579371419871">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="613" y="259" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1579368759685" />
+    <state x="613" y="259" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1579371419871" />
     <state x="540" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579369078729">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -191,13 +191,13 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="569" y="298" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1579370110397" />
-    <state x="608" y="360" key="NewPhpClassDialog" timestamp="1579368635447">
+    <state x="608" y="360" key="NewPhpClassDialog" timestamp="1579371483703">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="608" y="360" key="NewPhpClassDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1579368635447" />
-    <state x="496" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1579370043591">
+    <state x="608" y="360" key="NewPhpClassDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1579371483703" />
+    <state x="496" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1579371940452">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="496" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1579370043591" />
+    <state x="496" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1579371940452" />
   </component>
 </project>

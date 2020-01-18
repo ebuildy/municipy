@@ -4,6 +4,14 @@ easy_admin:
         date:     'd/m/Y'
         time:     'H:i'
         datetime: 'd/m/Y H:i:s'
+    design:
+      menu:
+        - { label: "People" }
+        - Conseiller
+        - { label: "Content" }
+        - Category
+        - Page
+        - PunchLine
     entities:
         Conseiller:
           class: App\Entity\Conseiller
@@ -18,6 +26,16 @@ easy_admin:
               - rank
         Category:
           class: App\Entity\ProgramCategory
+          list:
+            fields:
+              - title
+              - { property: 'image', type: 'image', base_path: '%app.path.categories_images%' }
+              - rank
+          form:
+            fields:
+            - title
+            - { property: 'imageFile', type: 'file' }
+            - rank
         PunchLine:
           class: App\Entity\PunchLine
         Page:

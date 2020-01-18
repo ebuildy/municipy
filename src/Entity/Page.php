@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Behavior\WithTimestamp;
 use App\Utils\StringUtils;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -15,6 +16,8 @@ use App\Entity\Behavior\TimestampableTrait;
  */
 class Page
 {
+    use WithTimestamp;
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -51,16 +54,6 @@ class Page
      * @ORM\OneToMany(targetEntity="App\Entity\Page", mappedBy="parent")
      */
     private $children;
-
-    /**
-     * @ORM\Column(type="datetime")
-     */
-    private $createdAt;
-
-    /**
-     * @ORM\Column(type="datetime", nullable=true)
-     */
-    private $updatedAt;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -201,16 +194,6 @@ class Page
         }
 
         return $this;
-    }
-
-    public function getCreatedAt(): ?\DateTimeInterface
-    {
-        return $this->createdAt;
-    }
-
-    public function getUpdatedAt(): ?\DateTimeInterface
-    {
-        return $this->updatedAt;
     }
 
     public function getPath(): ?string
